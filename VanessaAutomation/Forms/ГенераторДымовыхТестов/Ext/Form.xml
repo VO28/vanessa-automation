@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Генератор дымовых тестов</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Smoke test generator</v8:content>
+		</v8:item>
+	</Title>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -133,6 +143,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Каталог, в котором хранятся текстовые файлы с объектами-исключениям. Для каждого вида объектов метаданных должен быть отдельный файл ("Справочники", "Документы" и т. д.).</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Directory in which text files with exception objects are stored.</v8:content>
+								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ChoiceButton>true</ChoiceButton>
@@ -150,6 +164,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>При включении данного флага в формировании feature-файлов будут участвовать только объекты измененные относительно конфигурации поставщика. Для построения отчета о сравнении будет запущен конфигуторато текущей информационной базы. </v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>If this flag is set, feature-files will only include objects that have at least one item in the current database that is not marked for deletion.</v8:content>
+								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
@@ -166,6 +184,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Имя конфигурации поставщика для сравнения конфигураций</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Vendor configuration name for configuration comparison</v8:content>
+								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ContextMenu name="ИмяКонфигурацииПоставщикаКонтекстноеМеню" id="12"/>
@@ -178,6 +200,10 @@
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>При включении данного флага в формировании feature-файлов расширенных действий будут участвовать только объекты, для которых в текущей информационной базе существует хотя бы один не помеченный на удаление элемент</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>If this flag is set, only those objects that have at least one item in the current database that is not marked for deletion will be included in the creation of feature-files.</v8:content>
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
@@ -414,9 +440,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>КаталогФайловИсключений</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="КаталогВыходныхФайлов" id="3">
 			<Title>
@@ -436,9 +459,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>КаталогВыходныхФайлов</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ИмяКонфигурацииПоставщика" id="4">
 			<Title>
@@ -458,9 +478,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>ИмяКонфигурацииПоставщика</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ТолькоИзмененные" id="5">
 			<Title>
@@ -476,9 +493,6 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-			<Save>
-				<Field>ТолькоИзмененные</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ЕстьПараметрыЗапуска" id="6">
 			<Title>

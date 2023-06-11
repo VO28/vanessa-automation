@@ -13657,28 +13657,9 @@ When working with Vanessa Automation Single it is allowed to leave the field bla
 																		</Title>
 																	</ExtendedTooltip>
 																</InputField>
-																<CheckBoxField name="ТолькоИзмененныеОтносительноКонфигурацииПоставщика" id="3971">
-																	<DataPath>Объект.ТолькоИзмененныеОтносительноКонфигурацииПоставщика</DataPath>
-																	<TitleLocation>Right</TitleLocation>
-																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-																	<CheckBoxType>Auto</CheckBoxType>
-																	<ContextMenu name="ТолькоИзмененныеОтносительноКонфигурацииПоставщикаКонтекстноеМеню" id="3972"/>
-																	<ExtendedTooltip name="ТолькоИзмененныеОтносительноКонфигурацииПоставщикаРасширеннаяПодсказка" id="3973">
-																		<Title formatted="true">
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Если этот флаг установлен, в feature-файлы будут включены только те объекты, которые имеют хотя бы один элемент в текущей базе данных, не помеченный на удаление.</v8:content>
-																			</v8:item>
-																			<v8:item>
-																				<v8:lang>en</v8:lang>
-																				<v8:content>If this flag is set, feature-files will only include objects that have at least one item in the current database that is not marked for deletion.</v8:content>
-																			</v8:item>
-																		</Title>
-																	</ExtendedTooltip>
-																</CheckBoxField>
 																<RadioButtonField name="ЯзыкШаговДымовыхТестов" id="3980">
 																	<DataPath>Объект.ЯзыкШаговДымовыхТестов</DataPath>
-																	<TitleLocation>Top</TitleLocation>
+																	<TitleLocation>Left</TitleLocation>
 																	<RadioButtonType>Tumbler</RadioButtonType>
 																	<ChoiceList>
 																		<xr:Item>
@@ -13719,6 +13700,44 @@ When working with Vanessa Automation Single it is allowed to leave the field bla
 																	<ContextMenu name="ЯзыкШаговДымовыхТестовКонтекстноеМеню" id="3981"/>
 																	<ExtendedTooltip name="ЯзыкШаговДымовыхТестовРасширеннаяПодсказка" id="3982"/>
 																</RadioButtonField>
+																<CheckBoxField name="ТолькоИзмененныеОтносительноКонфигурацииПоставщика" id="3971">
+																	<DataPath>Объект.ТолькоИзмененныеОтносительноКонфигурацииПоставщикаДляДымовогоТестирования</DataPath>
+																	<TitleLocation>Right</TitleLocation>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ТолькоИзмененныеОтносительноКонфигурацииПоставщикаКонтекстноеМеню" id="3972"/>
+																	<ExtendedTooltip name="ТолькоИзмененныеОтносительноКонфигурацииПоставщикаРасширеннаяПодсказка" id="3973">
+																		<Title formatted="true">
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Если этот флаг установлен, в feature-файлы будут включены только те объекты, которые имеют хотя бы один элемент в текущей базе данных, не помеченный на удаление.</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>en</v8:lang>
+																				<v8:content>If this flag is set, feature-files will only include objects that have at least one item in the current database that is not marked for deletion.</v8:content>
+																			</v8:item>
+																		</Title>
+																	</ExtendedTooltip>
+																</CheckBoxField>
+																<CheckBoxField name="ТолькоВведенныеОбъектыДляДымовогоТестирования" id="3983">
+																	<DataPath>Объект.ТолькоВведенныеОбъектыДляДымовогоТестирования</DataPath>
+																	<TitleLocation>Right</TitleLocation>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ТолькоВведенныеОбъектыДляДымовогоТестированияКонтекстноеМеню" id="3984"/>
+																	<ExtendedTooltip name="ТолькоВведенныеОбъектыДляДымовогоТестированияРасширеннаяПодсказка" id="3985">
+																		<Title formatted="true">
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>При включении данного флага в формировании feature-файлов расширенных действий будут участвовать только объекты, для которых в текущей информационной базе существует хотя бы один не помеченный на удаление элемент</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>en</v8:lang>
+																				<v8:content>If this flag is set, only those objects that have at least one item in the current database that is not marked for deletion will be included in the creation of feature-files.</v8:content>
+																			</v8:item>
+																		</Title>
+																	</ExtendedTooltip>
+																</CheckBoxField>
 															</ChildItems>
 														</UsualGroup>
 													</ChildItems>
