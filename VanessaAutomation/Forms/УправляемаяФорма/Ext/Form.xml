@@ -13535,6 +13535,7 @@ When working with Vanessa Automation Single it is allowed to leave the field bla
 													</ToolTip>
 													<Group>AlwaysHorizontal</Group>
 													<Behavior>Collapsible</Behavior>
+													<Collapsed>true</Collapsed>
 													<ControlRepresentation>Picture</ControlRepresentation>
 													<ExtendedTooltip name="ГруппаДымовыеТестыРасширеннаяПодсказка" id="3960"/>
 													<ChildItems>
