@@ -13576,6 +13576,10 @@ When working with Vanessa Automation Single it is allowed to leave the field bla
 																			</v8:item>
 																		</Title>
 																	</ExtendedTooltip>
+																	<Events>
+																		<Event name="StartChoice">КаталогГенерированияДымовыхТестовНачалоВыбора</Event>
+																		<Event name="Opening">КаталогГенерированияДымовыхТестовОткрытие</Event>
+																	</Events>
 																</InputField>
 																<InputField name="ПутьФайлИсключенияДымовыхТестов" id="3968">
 																	<DataPath>Объект.КаталогФайловИсключаемыхОбъектовИзДымовогоТестирования</DataPath>
@@ -13597,6 +13601,10 @@ When working with Vanessa Automation Single it is allowed to leave the field bla
 																			</v8:item>
 																		</Title>
 																	</ExtendedTooltip>
+																	<Events>
+																		<Event name="StartChoice">ПутьФайлИсключенияДымовыхТестовНачалоВыбора</Event>
+																		<Event name="Opening">ПутьФайлИсключенияДымовыхТестовОткрытие</Event>
+																	</Events>
 																</InputField>
 																<InputField name="ПутьНастройкиСценариеДымовыхТестов" id="3977">
 																	<DataPath>Объект.ПутьНастройкиСценариеДымовыхТестов</DataPath>
@@ -13618,6 +13626,10 @@ When working with Vanessa Automation Single it is allowed to leave the field bla
 																			</v8:item>
 																		</Title>
 																	</ExtendedTooltip>
+																	<Events>
+																		<Event name="StartChoice">ПутьНастройкиСценариеДымовыхТестовНачалоВыбора</Event>
+																		<Event name="Opening">ПутьНастройкиСценариеДымовыхТестовОткрытие</Event>
+																	</Events>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
