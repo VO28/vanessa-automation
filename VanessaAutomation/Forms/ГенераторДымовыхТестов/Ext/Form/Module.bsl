@@ -1479,7 +1479,7 @@
 			|				And I click the button named 'ФормаСкопировать'
 			|				If the warning is displayed then
 			|					Then I raise ""Failed to copy an existing item " + ПредставлениеОбъекта  + """ exception" + "
-			|				If current form name is ""ErrorWindow"" Theа
+			|				If current form name is ""ErrorWindow"" Then
 			|					Then I raise ""Failed to copy an existing item " + ПредставлениеОбъекта  + """ exception" + "
 			|				And I save form header as 'ЗаголовокФормы'  variable
 			|
