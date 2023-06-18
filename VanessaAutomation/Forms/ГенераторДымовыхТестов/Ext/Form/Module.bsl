@@ -1618,7 +1618,7 @@
 			|
 			|		* Reread an existing item
 			|			Then '$ЗаголовокФормы$' window is opened
-			|			If 'ФормаПеречитать' attribute is present on the form Thenа
+			|			If 'ФормаПеречитать' attribute is present on the form Then
 			|				And I click the button named 'ФормаПеречитать'
 			|				If the warning is displayed then
 			|					Then I raise ""Failed to Reread an existing item " + ПредставлениеОбъекта + """ exception" + "
@@ -1691,7 +1691,7 @@
 				|				And I click the button named 'ФормаОтменаПроведения'
 				|				If the warning is displayed then
 				|					Then I raise ""Failed to Cancel Posting the document " + ПредставлениеОбъекта + """ exception" + "
-				|				If current form name is ""ErrorWindow"" Thenа
+				|				If current form name is ""ErrorWindow"" Then
 				|					Then I raise ""Failed to Cancel Posting the document " + ПредставлениеОбъекта + """ exception" + "
 				|
 				|		* Posting and close the document
